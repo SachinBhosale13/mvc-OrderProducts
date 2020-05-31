@@ -1,0 +1,283 @@
+﻿@{
+    ViewBag.Title = "AddNewOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    /* Zebra striping */
+    tr:nth-of-type(odd) {
+        background: #eee;
+    }
+
+    th {
+        background: #333;
+        color: white;
+        font-weight: bold;
+    }
+
+    td, th {
+        padding: 6px;
+        border: 1px solid #ccc;
+        text-align: left;
+    }
+
+    /*th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }*/
+</style>
+
+
+
+<h2 style="text-align:center">Add New Order</h2>
+
+<div class="form-horizontal">
+
+    <form id="AddProductForm">
+        <div class="form-group">
+            @Html.Label("Customer Name", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("CustomerID", new SelectList(ViewBag.Customers, "ID", "Name"), "Please select", new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Product Name", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ProductCode", new SelectList(ViewBag.Products, "ProductCode", "ProductName"), "Please select", new { @class = "form-control" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Quantity", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input id="Qty" name="Qty" type="text" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2"></div>
+
+            <div class="col-md-10">
+                <input id="btnAddProduct" type="button" value="Add Product" class="btn btn-success " />
+            </div>
+        </div>
+
+    </form>
+
+
+    <div class="form-group">
+        @Html.Label("or Upload Excel", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <button class="btn btn-primary" id="btnUpload">Upload</button>
+        </div>
+    </div>
+
+    <table id="tblProductsInOrder" style="display:none">
+        <thead>
+            <tr>
+                <th style="display:none">Product Code</th>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Unit</th>
+                <th>Rate</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div>
+        <span style="text-align:right">
+            <p>Total Quantity:</p>
+            <p id="tQty">0</p>
+
+            <p>Total Amount:</p>
+            <p id="tAmt">0.00</p>
+        </span>
+    </div>
+
+    <br />
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input id="btnPlaceOrder" type="button" value="Place this order" class="btn btn-primary pull-right" />
+        </div>
+    </div>
+</div>
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        $("#btnAddProduct").click(function () {
+            var validForm = false;
+
+            validForm = $("#AddProductForm").valid();
+
+
+            if (validForm) {
+                var pCode = $("#ProductCode").val();
+                var pQty = $("#Qty").val();
+
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:53405/Product/GetProductByCode?pCode=" + pCode,
+                    cache: false,
+                    success: function (data) {
+                        //alert(JSON.stringify(data));
+                        //$('#tblProductsInOrder tbody').empty();
+
+                        var isProductFound = false;
+
+                        $('#tblProductsInOrder .tdPCode').each(function () {
+                            //var thisQty = $(this).find(".tdQty").html()
+                            thisPCode = $(this).html();
+
+                            if (pCode == thisPCode) {
+                                var thisQty = parseInt($(this).closest('tr').find(".tdQty").html());
+                                var thisAmt = parseInt($(this).closest('tr').find(".tdAmt").html());
+
+                                $(this).closest('tr').find(".tdQty").html(parseInt(thisQty) + parseInt(pQty));
+
+                                var updatedQty = parseInt($(this).closest('tr').find(".tdQty").html());
+
+                                $(this).closest('tr').find(".tdAmt").html(parseFloat(parseInt(updatedQty) * parseFloat(data.Rate)));
+
+                                var updatedAmt = parseInt($(this).closest('tr').find(".tdAmt").html());
+
+                                //Total Quantity
+                                var tQty = parseInt($("#tQty").html());
+                                tQty = parseInt(tQty - parseInt(thisQty));
+                                tQty = parseInt(tQty) + parseInt(updatedQty);
+                                $("#tQty").html(tQty);
+
+
+                                //Total Amount
+                                var tAmt = parseFloat($("#tAmt").html());
+                                tAmt = parseFloat(tAmt - parseFloat(thisAmt));
+                                tAmt = parseFloat(tAmt + parseFloat(updatedAmt));
+                                $("#tAmt").html(tAmt);
+
+
+                                isProductFound = true;
+                            }
+
+                            //tQty = tQty + parseInt(thisQty);
+                        });
+
+                        if (!isProductFound) {
+
+                            var tr;
+
+                            tr = $('<tr/>');
+
+                            tr.append("<td class='tdPCode' style='display:none'>" + data.ProductCode + "</td>");
+                            tr.append("<td>" + data.ProductName + "</td>");
+                            tr.append("<td> <img class='imgProduct' src='" + data.ProductImage + "'></td>");
+                            tr.append("<td>" + data.Unit + "</td>");
+                            tr.append("<td>" + data.Rate + "</td>");
+
+                            var qty = $("#Qty").val();
+                            tr.append("<td class='tdQty'>" + qty + "</td>");
+
+                            var amount = data.Rate * qty;
+
+                            tr.append("<td class='tdAmt'>" + amount + "</td>");
+
+                            $('#tblProductsInOrder tbody').append(tr);
+
+                            $("#tblProductsInOrder").css("display", "block");
+
+
+                            //Total Quantity
+                            var tQty = parseInt($("#tQty").html()) + parseInt(qty);
+                            $("#tQty").html(tQty);
+
+
+                            //Total Amount
+                            var tAmt = parseFloat($("#tAmt").html()) + parseFloat(amount);
+                            $("#tAmt").html(tAmt);
+
+
+                            //$('#tblProductsInOrder .tdQty').each(function () {
+                            //    //var thisQty = $(this).find(".tdQty").html()
+                            //    thisQty = $(this).html();
+                            //    tQty = tQty + parseInt(thisQty);
+                            //});
+
+                        }
+                    },
+                    error: function () { }
+                })
+            }
+        });
+
+        $("#btnPlaceOrder").click(function () {
+
+            var totalQty = parseInt($("#tQty").html());
+            var totalAmt = parseFloat($("#tAmt").html());
+
+            var rowCount = parseInt($("#tblProductsInOrder > tbody > tr").length);
+
+            if ((totalQty < 0 || totalQty == "") || totalAmt == 0 || totalAmt == "" || rowCount == 0 || rowCount == "") {
+                alert("Please add products.");
+            }
+            else {
+                var lstOrderDetails = [];
+
+                $('#tblProductsInOrder tbody tr').each(function () {
+                    var thisPCode = $(this).find(".tdPCode").html();
+                    var thisPQty = $(this).find(".tdQty").html();
+                    var thisAmt = $(this).find(".tdAmt").html();
+
+                    lstOrderDetails.push({
+                        "ProductCode": thisPCode,
+                        "Qty": thisPQty,
+                        "Amount": thisAmt
+                    });
+                });
+
+                var jsonData =
+                    {
+                        "CustomerID": $("#CustomerID").val(),
+                        "lstOrderDetails": lstOrderDetails,
+                        "TotalQty": $("#tQty").html(),
+                        "TotalAmount": $("#tAmt").html()
+                    }
+
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:53405/Orders/SubmitNewOrder",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(jsonData),
+                    cache: false,
+                    success: function (data) {
+                        alert('Order Added Successfully.');
+                    },
+                    error: function () { }
+                });
+            }
+
+
+
+        });
+
+        $('#btnUpload').click(function () {
+            var custId = parseInt($("#CustomerID").val());
+
+            window.location.href = "http://localhost:53405/Orders/ImportExcel?custId=" + custId + "&orderId=0";
+        });
+    </script>
+}

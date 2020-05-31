@@ -1,0 +1,110 @@
+﻿@model IEnumerable<Models.OrderDetailsModel>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        /* Zebra striping */
+        tr:nth-of-type(odd) {
+            background: #eee;
+        }
+
+        th {
+            background: #333;
+            color: white;
+            font-weight: bold;
+        }
+
+        td, th {
+            padding: 6px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+    </style>
+
+<h2>Order Details</h2>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderID)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.ProductCode)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductImage)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.TotalQty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalAmount)
+        </th>*@        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderID)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.ProductCode)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            <img class='imgProduct' src='@Html.DisplayFor(modelItem => item.ProductImage)' alt='image'>
+            @*@Html.DisplayFor(modelItem => item.ProductImage)*@
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.CustomerID)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amount)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.TotalQty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalAmount)
+        </td>*@
+    </tr>
+}
+</table>
+
+    <br />
+
+                      <div>
+                          @Html.ActionLink("Back to List", "Index")
+                      </div>
+

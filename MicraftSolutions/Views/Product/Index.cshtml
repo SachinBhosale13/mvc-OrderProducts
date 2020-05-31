@@ -1,0 +1,83 @@
+﻿<h2 style="text-align:center">Products</h2>
+
+<p style="text-align:right">
+     @Html.ActionLink("Add New Product", "Create")
+</p>
+
+
+<table id="tblProduct">
+    <thead>
+        <tr>
+            <th style="display:none;">ID</th>
+            <th>Product Code</th>
+            <th>Product Name</th>
+            <th>Product Image</th>
+            <th>Unit</th>
+            <th>Rate</th>
+            @*<th>Description</th>*@
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody id="tBodyProduct">        
+       
+    </tbody>
+
+</table>
+
+
+
+
+@section scripts{
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
+
+    <script>
+    $(document).ready(function () {
+
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:53405/Product/GetAllProducts",
+            cache: false,
+            success: function (data) {
+                //alert(JSON.stringify(data));
+                $('#tBodyProduct').empty();
+                var tr;
+                for (var i = 0; i < data.length; i++) {
+                    tr = $('<tr/>');
+
+
+                    tr.append("<td style='display:none;'>" + data[i].ID + "</td>");
+                    tr.append("<td>" + data[i].ProductCode + "</td>");
+                    tr.append("<td>" + data[i].ProductName + "</td>");
+                    
+                    tr.append("<td><img class='imgProduct' src='" + data[i].ProductImage + "' alt='image'></td>");
+
+                    tr.append("<td>" + data[i].Unit + "</td>");
+                    tr.append("<td>" + data[i].Rate + "</td>");
+                    //tr.append("<td>" + data[i].Description + "</td>");
+                    tr.append("<td><a class='btn btn-success' href='/Product/Edit?pCode=" + data[i].ProductCode + "'>Edit</a>  " +
+                        "<a class='btn btn-danger' href='/Product/Delete?pCode=" + data[i].ProductCode + "'>Delete</a>" +
+                        "</td>");
+
+                    $('#tblProduct tbody').append(tr);
+
+                }
+            },
+            error: function () {
+
+            }
+        })
+
+        
+
+        $('#tblProduct').dataTable(
+            {
+                paging: false,
+                ordering: false,
+                searching: false,
+                info: false
+            });
+    });
+    </script>
+}

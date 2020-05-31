@@ -1,0 +1,364 @@
+﻿@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    /* Zebra striping */
+    tr:nth-of-type(odd) {
+        background: #eee;
+    }
+
+    th {
+        background: #333;
+        color: white;
+        font-weight: bold;
+    }
+
+    td, th {
+        padding: 6px;
+        border: 1px solid #ccc;
+        text-align: left;
+    }
+
+    /*th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }*/
+</style>
+
+
+<h2>Edit Order Details:-</h2>
+
+<div class="form-horizontal">
+    <input type="hidden" id="OrderId" name="OrderId" value="">
+
+    <form id="editOrderProductForm">
+
+        <div class="form-group">
+            @Html.Label("Customer Name", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("CustomerID", new SelectList(ViewBag.Customers, "ID", "Name"), "Please select", new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Product Name", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ProductCode", new SelectList(ViewBag.Products, "ProductCode", "ProductName"), "Please select", new { @class = "form-control" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Quantity", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input id="Qty" name="Qty" type="text" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-2"></div>
+
+            <div class="col-md-10">
+                <input id="btnAddProduct" type="button" value="Add Product" class="btn btn-success " />
+            </div>
+        </div>
+
+    </form>
+
+    <div class="form-group">
+        @Html.Label("or Upload Excel", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <button class="btn btn-primary" id="btnEditUpload">Upload</button>
+        </div>
+    </div>
+
+    <table id="tblEditProductsInOrder" style="display:none">
+        <thead>
+            <tr>
+                <th style="display:none">Product Code</th>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Unit</th>
+                <th>Rate</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div>
+        <span style="text-align:right">
+            <p>Total Quantity:</p>
+            <p id="newTQty">0</p>
+
+            <p>Total Amount:</p>
+            <p id="newTAmt">0.00</p>
+        </span>
+    </div>
+
+    <br />
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input id="btnUpdateOrder" type="button" value="Update Order" class="btn btn-primary pull-right" />
+        </div>
+    </div>
+</div>
+
+
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section scripts
+    {
+    <script>
+        $(document).ready(function () {
+            var orderId = '@TempData["orderId"]';
+            $("#OrderId").val(orderId);
+
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:53405/Orders/GetOrdersDetailsById?orderId=" + orderId,
+                cache: false,
+                success: function (data) {
+
+
+
+                    $('#tblEditProductsInOrder tbody').empty();
+                    var tr;
+                    for (var i = 0; i < data.length; i++) {
+                        $("#CustomerID").val(data[i].CustomerID);
+
+                        tr = $('<tr/>');
+
+                        tr.append("<td class='tdPCode' style='display:none'>" + data[i].ProductCode + "</td>");
+                        tr.append("<td>" + data[i].ProductName + "</td>");
+                        tr.append("<td> <img class='imgProduct' src='" + data[i].ProductImage + "'></td>");
+                        tr.append("<td>" + data[i].Unit + "</td>");
+                        tr.append("<td>" + data[i].Rate + "</td>");
+                        tr.append("<td class='tdQty'>" + data[i].Qty + "</td>");
+                        tr.append("<td class='tdAmt'>" + data[i].Amount + "</td>");
+
+                        tr.append("<td><button type='button'  class='deletebtn btn btn-success'>Delete</button></td>");
+                        //tr.append("<td><button type='button'  click='deleteProduct("+data[i].ProductCode+")' class='btn btn-success'>Delete</button></td>");
+
+                        $('#tblEditProductsInOrder tbody').append(tr);
+
+                        $("#newTQty").html(data[i].TotalQty);
+                        $("#newTAmt").html(data[i].TotalAmount);
+
+                        $("#tblEditProductsInOrder").css('display', 'block');
+                    }
+
+
+                },
+                error: function () { }
+            });
+
+            //for deleting product
+            $(document).on('click', 'button.deletebtn', function () {
+                var thisQty = $(this).closest('tr').find(".tdQty").html();
+                var thisAmt = $(this).closest('tr').find(".tdAmt").html();
+
+                //Total Quantity
+                var tQty = parseInt($("#newTQty").html()) - parseInt(thisQty);
+                $("#newTQty").html(tQty);
+
+
+                //Total Amount
+                var tAmt = parseFloat($("#newTAmt").html()) - parseFloat(thisAmt);
+                $("#newTAmt").html(tAmt);
+
+                $(this).closest('tr').remove();
+
+                var rowCount = parseInt($("#tblEditProductsInOrder > tbody > tr").length);
+
+                if (rowCount < 1) {
+                    $("#tblEditProductsInOrder").css('display', 'none');
+                }
+
+                return false;
+            });
+        });
+
+        $("#btnAddProduct").click(function () {
+
+            var validForm = false;
+            validForm = $("#editOrderProductForm").valid();
+
+            if (validForm) {
+
+                var pCode = $("#ProductCode").val();
+                var pQty = $("#Qty").val();
+
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:53405/Product/GetProductByCode?pCode=" + pCode,
+                    cache: false,
+                    success: function (data) {
+                        //alert(JSON.stringify(data));
+                        //$('#tblProductsInOrder tbody').empty();
+
+                        var isProductFound = false;
+
+                        $('#tblEditProductsInOrder .tdPCode').each(function () {
+                            //var thisQty = $(this).find(".tdQty").html()
+                            thisPCode = $(this).html();
+
+                            if (pCode == thisPCode) {
+                                var thisQty = parseInt($(this).closest('tr').find(".tdQty").html());
+                                var thisAmt = parseInt($(this).closest('tr').find(".tdAmt").html());
+
+                                $(this).closest('tr').find(".tdQty").html(parseInt(thisQty) + parseInt(pQty));
+
+                                var updatedQty = parseInt($(this).closest('tr').find(".tdQty").html());
+
+                                $(this).closest('tr').find(".tdAmt").html(parseFloat(parseInt(updatedQty) * parseFloat(data.Rate)));
+
+                                var updatedAmt = parseInt($(this).closest('tr').find(".tdAmt").html());
+
+                                //Total Quantity
+                                var tQty = parseInt($("#newTQty").html());
+                                tQty = parseInt(tQty - parseInt(thisQty));
+                                tQty = parseInt(tQty) + parseInt(updatedQty);
+                                $("#newTQty").html(tQty);
+
+
+                                //Total Amount
+                                var tAmt = parseFloat($("#newTAmt").html());
+                                tAmt = parseFloat(tAmt - parseFloat(thisAmt));
+                                tAmt = parseFloat(tAmt + parseFloat(updatedAmt));
+                                $("#newTAmt").html(tAmt);
+
+
+                                isProductFound = true;
+                            }
+
+                            //tQty = tQty + parseInt(thisQty);
+                        });
+
+                        if (!isProductFound) {
+                            var tr;
+
+                            tr = $('<tr/>');
+
+                            tr.append("<td class='tdPCode' style='display:none'>" + data.ProductCode + "</td>");
+                            tr.append("<td>" + data.ProductName + "</td>");
+                            tr.append("<td> <img class='imgProduct' src='" + data.ProductImage + "'></td>");
+                            tr.append("<td>" + data.Unit + "</td>");
+                            tr.append("<td>" + data.Rate + "</td>");
+
+                            var qty = $("#Qty").val();
+                            tr.append("<td class='tdQty'>" + qty + "</td>");
+
+                            var amount = data.Rate * qty;
+
+                            tr.append("<td class='tdAmt'>" + amount + "</td>");
+
+
+
+                            tr.append("<td><button type='button' class='deletebtn btn btn-success'>Delete</button></td>");
+                            //tr.append("<td><button type='button' click='deleteProduct("+data.ProductCode+")' class='btn btn-success'>Delete</button></td>");
+
+                            $('#tblEditProductsInOrder tbody').append(tr);
+
+                            $("#tblEditProductsInOrder").css("display", "block");
+
+
+                            //Total Quantity
+                            var tQty = parseInt($("#newTQty").html()) + parseInt(qty);
+                            $("#newTQty").html(tQty);
+
+
+                            //Total Amount
+                            var tAmt = parseFloat($("#newTAmt").html()) + parseFloat(amount);
+                            $("#newTAmt").html(tAmt);
+
+
+                            //$('#tblProductsInOrder .tdQty').each(function () {
+                            //    //var thisQty = $(this).find(".tdQty").html()
+                            //    thisQty = $(this).html();
+                            //    tQty = tQty + parseInt(thisQty);
+                            //});
+                        }
+                    },
+                    error: function () { }
+                });
+            }
+        });
+
+
+        //Submitting Order details
+        $("#btnUpdateOrder").click(function () {
+
+            var totalQty = parseInt($("#newTQty").html());
+            var totalAmt = parseFloat($("#newTAmt").html());
+
+            var rowCount = parseInt($("#tblEditProductsInOrder > tbody > tr").length);
+
+            if ((totalQty < 0 || totalQty == "") || totalAmt == 0 || totalAmt == "" || rowCount == 0 || rowCount == "") {
+                alert("Please add products.");
+            }
+            else {
+
+                var lstOrderDetails = [];
+
+                $('#tblEditProductsInOrder tbody tr').each(function () {
+                    var thisPCode = $(this).find(".tdPCode").html();
+                    var thisPQty = $(this).find(".tdQty").html();
+                    var thisAmt = $(this).find(".tdAmt").html();
+
+                    lstOrderDetails.push({
+                        "ProductCode": thisPCode,
+                        "Qty": thisPQty,
+                        "Amount": thisAmt
+                    });
+                });
+
+                var jsonData =
+                    {
+                        "OrderID": parseInt($("#OrderId").val()),
+                        "CustomerID": $("#CustomerID").val(),
+                        "lstOrderDetails": lstOrderDetails,
+                        "TotalQty": $("#newTQty").html(),
+                        "TotalAmount": $("#newTAmt").html()
+                    }
+
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:53405/Orders/SubmitNewOrder",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(jsonData),
+                    cache: false,
+                    success: function (data) {
+                        alert('Successfully Updated.');
+                    },
+                    error: function () { }
+                });
+            }
+        });
+
+
+        $("#btnEditUpload").click(function () {
+            var custId = parseInt($("#CustomerID").val());
+            var orderId = parseInt($("#OrderId").val());
+
+            window.location.href = "http://localhost:53405/Orders/ImportExcel?custId=" + custId + "&orderId=" + orderId;
+
+        });
+
+    </script>
+}
+

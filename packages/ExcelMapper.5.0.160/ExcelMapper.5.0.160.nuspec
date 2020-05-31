@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ExcelMapper</id>
+    <version>5.0.160</version>
+    <title>ExcelMapper</title>
+    <authors>Michael Ganss</authors>
+    <owners>Michael Ganss</owners>
+    <licenseUrl>https://www.nuget.org/packages/ExcelMapper/5.0.160/license</licenseUrl>
+    <projectUrl>https://github.com/mganss/ExcelMapper</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Map POCOs to Excel files</description>
+    <summary />
+    <copyright>Copyright 2015-2020 Michael Ganss</copyright>
+    <tags>npoi mapper excel xls xlsx map mapping poco orm linq</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="NPOI" version="2.5.1" />
+      </group>
+      <group targetFramework="Unsupported0.0">
+        <dependency id="NPOI" version="2.5.1" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,67 @@
+﻿<h2 style="text-align:center">Customers</h2>
+
+<p style="text-align:right">
+    @Html.ActionLink("Add New Customer", "Create")
+</p>
+
+
+<table class="table" id="tblCustomer">
+    <thead>
+        <tr>
+            <th style="display:none;">ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>pincode</th>            
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody id="tBodyCustomer"></tbody>
+
+</table>
+
+
+
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:53405/Customer/GetAllCustomers",
+                cache: false,
+                success: function (data) {
+                    //alert(JSON.stringify(data));
+                    $('#tBodyCustomer').empty();
+                    var tr;
+                    for (var i = 0; i < data.length; i++) {
+                        tr = $('<tr/>');
+
+                        tr.append("<td style='display:none;'>" + data[i].ID + "</td>");
+                        tr.append("<td>" + data[i].Name + "</td>");
+                        tr.append("<td>" + data[i].Address + "</td>");
+                        tr.append("<td>" + data[i].City + "</td>");
+                        tr.append("<td>" + data[i].pincode + "</td>");
+                   
+                        tr.append("<td><a class='btn btn-success' href='/Customer/Edit?id=" + data[i].ID + "'>Edit</a>  " +
+                            "<a class='btn btn-danger' href='/Customer/Delete?custId=" + data[i].ID + "'>Delete</a>" +
+                            "</td>");
+
+                        $('#tblCustomer tbody').append(tr);
+                    }
+                },
+                error: function () {  }
+            })
+
+            $('#tblCustomer').DataTable(
+                {
+                    paging: false,
+                    ordering: false,
+                    searching: false,
+                    info:false
+                });
+        });
+    </script>
+}

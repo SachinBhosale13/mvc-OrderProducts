@@ -1,0 +1,9 @@
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\Models\bin\Debug\Models.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\Models\bin\Debug\Models.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\Models\obj\Debug\Models.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\Models\obj\Debug\Models.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\Models\bin\Debug\Models.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\Models\bin\Debug\Models.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\Models\obj\Debug\Models.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\Models\obj\Debug\Models.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

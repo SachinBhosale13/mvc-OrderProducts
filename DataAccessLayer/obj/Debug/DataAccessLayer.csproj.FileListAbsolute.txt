@@ -1,0 +1,14 @@
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\DataAccessLayer\bin\Debug\Models.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\DataAccessLayer\bin\Debug\Models.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\bin\Debug\Models.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\bin\Debug\Models.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

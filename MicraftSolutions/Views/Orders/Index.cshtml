@@ -1,0 +1,77 @@
+﻿<h2 style="text-align:center">Orders</h2>
+
+<p style="text-align:right">
+    @Html.ActionLink("Add New Order", "AddNewOrder")
+</p>
+
+
+<table class="table" id="tblOrder">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Order Date</th>
+            <th>Customer Name</th>
+            <th>Total Quantity</th>
+            <th>TotalAmount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody id="tBodyOrder"></tbody>
+
+</table>
+
+
+
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:53405/Orders/GetAllOrders",
+                cache: false,
+                success: function (data) {
+                    //alert(JSON.stringify(data));
+                    $('#tBodyOrder').empty();
+                    var tr;
+                    for (var i = 0; i < data.length; i++) {
+                        tr = $('<tr/>');
+
+                        tr.append("<td>" + data[i].OrderID + "</td>");
+
+                        //var date_test = new Date("2011-07-14 11:23:00".replace(/-/g, "/"));
+                        //console.log(date_test);
+
+                        var OrderDate = data[i].OrderDate.split(" ")[0];
+
+                        tr.append("<td>" + OrderDate + "</td>");
+                        //tr.append("<td>" + data[i].CustomerID + "</td>");
+                        tr.append("<td>" + data[i].CustomerName + "</td>");
+                        tr.append("<td>" + data[i].TotalQty + "</td>");
+                        tr.append("<td>" + data[i].TotalAmount + "</td>");
+                        
+                        tr.append("<td>"+
+                            "<a class='btn btn-success' href='/Orders/Details?orderId=" + data[i].OrderID + "'>Details</a>  "
+                            + "<a class='btn btn-success' href='/Orders/Edit?orderId=" + data[i].OrderID + "'>Edit</a>  "
+                             + "<a class='btn btn-danger' href='/Orders/Delete?orderId=" + data[i].OrderID + "'>Delete</a>"
+
+                            + "</td>");                        
+
+                        $('#tblOrder tbody').append(tr);
+                    }
+                },
+                error: function () { }
+            })
+
+            $('#tblOrder').DataTable(
+                {
+                    paging: false,
+                    ordering: false,
+                    searching: false,
+                    info: false
+                });
+        });
+    </script>
+}

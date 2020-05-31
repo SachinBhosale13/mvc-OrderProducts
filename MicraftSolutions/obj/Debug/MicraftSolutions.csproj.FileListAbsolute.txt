@@ -1,0 +1,155 @@
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\ApplicationInsights.config
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\csc.exe
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\csc.exe.config
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\csc.rsp
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\csi.exe
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\csi.rsp
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.AppContext.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.Collections.Immutable.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.IO.FileSystem.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.Reflection.Metadata.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\vbc.exe
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\vbc.exe.config
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\vbc.rsp
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\VBCSCompiler.exe
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\VBCSCompiler.exe.config
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\MicraftSolutions.dll.config
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\MicraftSolutions.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\MicraftSolutions.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Antlr3.Runtime.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.DependencyCollector.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.Web.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.WindowsServer.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.ApplicationInsights.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.Web.Infrastructure.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Newtonsoft.Json.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Helpers.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Mvc.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Optimization.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Razor.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.Deployment.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.Razor.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\WebGrease.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Helpers.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Mvc.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Optimization.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Razor.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.Deployment.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.Razor.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Antlr3.Runtime.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Newtonsoft.Json.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.ApplicationInsights.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.DependencyCollector.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.WindowsServer.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.Web.xml
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\obj\Debug\MicraftSolutions.csprojResolveAssemblyReference.cache
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\obj\Debug\MicraftSolutions.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\obj\Debug\MicraftSolutions.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\BusinessLayer.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Models.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\BusinessLayer.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Models.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\DataAccessLayer.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\DataAccessLayer.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\csc.exe
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.Collections.Immutable.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.Reflection.Metadata.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\VBCSCompiler.exe
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\ApplicationInsights.config
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\csc.exe.config
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\csc.rsp
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\csi.exe
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\csi.rsp
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.AppContext.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.IO.FileSystem.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\vbc.exe
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\vbc.exe.config
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\vbc.rsp
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\roslyn\VBCSCompiler.exe.config
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\MicraftSolutions.dll.config
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\MicraftSolutions.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\MicraftSolutions.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Antlr3.Runtime.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\BouncyCastle.Crypto.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\BusinessLayer.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\ICSharpCode.SharpZipLib.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.DependencyCollector.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.Web.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.WindowsServer.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.ApplicationInsights.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.Web.Infrastructure.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Models.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Newtonsoft.Json.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\NPOI.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\NPOI.OOXML.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\NPOI.OpenXml4Net.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\NPOI.OpenXmlFormats.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Helpers.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Mvc.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Optimization.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Razor.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.Deployment.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.Razor.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\WebGrease.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\DataAccessLayer.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\BusinessLayer.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Models.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\BouncyCastle.Crypto.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\ICSharpCode.SharpZipLib.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\ICSharpCode.SharpZipLib.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Helpers.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Mvc.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Optimization.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.Razor.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.Deployment.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\System.Web.WebPages.Razor.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Antlr3.Runtime.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Newtonsoft.Json.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.ApplicationInsights.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.DependencyCollector.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.WindowsServer.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\Microsoft.AI.Web.xml
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\bin\DataAccessLayer.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\obj\Debug\MicraftSolutions.csprojResolveAssemblyReference.cache
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\obj\Debug\MicraftSolutions.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\MicraftSolutions\obj\Debug\MicraftSolutions.pdb

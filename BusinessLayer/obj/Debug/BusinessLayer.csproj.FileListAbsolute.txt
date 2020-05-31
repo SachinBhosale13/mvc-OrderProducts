@@ -1,0 +1,18 @@
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\BusinessLayer\obj\Debug\BusinessLayer.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\DataAccessLayer.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\Models.dll
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Sachin\Interview\Micraft Solutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\Models.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\DataAccessLayer.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\Models.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\bin\Debug\Models.pdb
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\obj\Debug\BusinessLayer.pdb
