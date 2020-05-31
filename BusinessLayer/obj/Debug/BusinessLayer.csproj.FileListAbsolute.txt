@@ -16,3 +16,12 @@ D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\bin
 D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\BusinessLayer\obj\Debug\BusinessLayer.pdb
+D:\GitHub\MVC\mvc-OrderProducts\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\GitHub\MVC\mvc-OrderProducts\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\GitHub\MVC\mvc-OrderProducts\BusinessLayer\bin\Debug\DataAccessLayer.dll
+D:\GitHub\MVC\mvc-OrderProducts\BusinessLayer\bin\Debug\Models.dll
+D:\GitHub\MVC\mvc-OrderProducts\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+D:\GitHub\MVC\mvc-OrderProducts\BusinessLayer\bin\Debug\Models.pdb
+D:\GitHub\MVC\mvc-OrderProducts\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+D:\GitHub\MVC\mvc-OrderProducts\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\GitHub\MVC\mvc-OrderProducts\BusinessLayer\obj\Debug\BusinessLayer.pdb

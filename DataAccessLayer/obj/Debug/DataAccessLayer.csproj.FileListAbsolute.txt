@@ -12,3 +12,10 @@ D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\b
 D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\Sachin\Interview\MicraftSolutions\Task\MVC\MicraftSolutions\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\GitHub\MVC\mvc-OrderProducts\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\GitHub\MVC\mvc-OrderProducts\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\GitHub\MVC\mvc-OrderProducts\DataAccessLayer\bin\Debug\Models.dll
+D:\GitHub\MVC\mvc-OrderProducts\DataAccessLayer\bin\Debug\Models.pdb
+D:\GitHub\MVC\mvc-OrderProducts\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\GitHub\MVC\mvc-OrderProducts\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\GitHub\MVC\mvc-OrderProducts\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

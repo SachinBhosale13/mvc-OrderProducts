@@ -1,0 +1,9 @@
+
+*.pdb
+*.pdb
+*.pdb
+*.cache
+BusinessLayer/bin/Debug/BusinessLayer.dll
+*.dll
+*.pdb
+*.cache
